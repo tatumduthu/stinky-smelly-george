@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>parkingApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--
+author: Tatum
+version: whatever
+assignment: project1-CIS376
+resources: w3schools, codepen, codeacademy
+-->
+
+<title>Tatum's Parking Log</title>
+                                                                       
+<!-- image and title with class mascot -->
+<img src="https://i.pinimg.com/originals/7e/41/cc/7e41ccf7b643701e490448d4127b7b3f.jpg" alt="UNA fountain" class="header-image">
+<h1>Tatum's Parking Log 🦭</h1>
+</head>
+ 
+<p><em>This is a table log of my <a href="http://alabamacommunication.org/wordpress/wp-content/uploads/2024/07/UNA-Parking-Map.pdf" target="_blank">parking</a> experience during the Spring 2025 semester at <a href="https://una.edu" target="_blank"> UNA</em></a>.</p>
+                                                                                                                             
+<!-- <div class="form-container"> idk -->
+                           
+  <form id="parkingForm">
+    <label for="dateParked"><strong>What day?</strong>  </label><br>
+    <input id="dateParked" type="date" required<br><br><br>
+  
+<!-- new dropdown bar with parking options. from w3Schools -->                                      
+    <label for="wheredPark"><strong>Where'd you park?</strong></label><br>
+    <select id="wheredPark" required> 
+      <option value="">Select a parking lot</option>
+      <option value="Appleby">Appleby</option>
+      <option value="Church">Church</option>
+      <option value="Lot O">Lot O</option>
+      <option value="Parking Deck">Parking Deck</option>
+      <option value="Rice/Rivers">Rice/Rivers</option>
+      <option value="Other">Other</option>
+    </select><br><br>
+  
+    <label for="timeParked"><strong>What time?</strong></label><br>
+    <input id="timeParked" type="time" required><br><br>
+  
+    <label for="additionalInfo"><strong>Additional info?</strong></label><br>
+    <textarea id="additionalInfo" rows="4" cols="50" placeholder="Enter any additional info"></textarea><br><br>
+    
+    <button type="button" id="saveParking">Save Parking Data</button>
+  </form>
+</div><br><br>        
+ 
+                                          
+<!-- input new parking log 
+     new table feature to hold all the parking form information. from w3Schools                                     
+ -->                                         
+ 
+<br><br><h2><strong>Parking Log: </strong><h2><br>
+<table id="parkingTable">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Parking Lot</th> 
+      <th>Time</th>                  
+      <th>Additional Info</th>                  
+    </tr>                    
+  </thead>                   
+  <tbody>
+    <tr>
+      <td>2025-01-14</td>                   
+      <td>Rice/Rivers</td>                  
+      <td>10:42</td>                  
+      <td>Rainy, cold day</td>     
+    </tr>                   
+    <tr>                   
+      <td>2025-01-16</td>                   
+      <td>Church</td>                  
+      <td>10:40</td>                  
+      <td>Clear, sunny, chill day</td>                       
+    </tr>
+  </tbody>
+</table>
+                                           
+ 
+</body>
+<!-- </body> -->
+<br><h5>link to <a href="https://codepen.io/tatumduthu/pen/ZYzoqMy" target="_blank"</a> original codePen</h5>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

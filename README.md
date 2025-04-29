@@ -22,21 +22,38 @@ long it too me to find a parking spot since it takes AWHILE sometimes...
 course now, we have revisited this project to upgrade it with all the 
 cool new things we have learned.
 
-### Code snippet from original project
-- This is code for the first card that displays my parking app project
+### Code Snippet: original project
+This is code for the dropdown button to select the parking lot that you parked in.
+It has the label, parking ID, and breaks inserted at the end to separate the questions
+for the parking form.
 ```json
-<div class="row">
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Parking Blog</h4>
-        <img class="card-img-top img-thumbnail" src="images/parkingAppPreview.png" alt="Card image">
-        <p class="card-text"> My first web dev project where I did this little blog! </p>
-        <a href="pages/parkingApp.html" target="parking" class="card-link">Parking App</a>
-        <a href="pages/parkingAppSource.html" target="parking" class="card-link">source code</a>
-      </div>
-    </div>
-  </div>
+<label for="wheredPark"><strong>Where'd you park?</strong></label><br>
+    <select id="wheredPark" required> 
+      <option value="">Select a parking lot</option>
+      <option value="Appleby">Appleby</option>
+      <option value="Church">Church</option>
+      <option value="Lot O">Lot O</option>
+      <option value="Parking Deck">Parking Deck</option>
+      <option value="Rice/Rivers">Rice/Rivers</option>
+      <option value="Other">Other</option>
+    </select><br><br>
+
+```
+
+### Code Snippet: This project
+This is new code implemented into this project for the nav bar. The nav bar has
+many options such as my Github profile, the source code, wireframe, etc.
+```json
+<label for="wheredPark"><strong>Where'd you park?</strong></label><br>
+    <select id="wheredPark" required> 
+      <option value="">Select a parking lot</option>
+      <option value="Appleby">Appleby</option>
+      <option value="Church">Church</option>
+      <option value="Lot O">Lot O</option>
+      <option value="Parking Deck">Parking Deck</option>
+      <option value="Rice/Rivers">Rice/Rivers</option>
+      <option value="Other">Other</option>
+    </select><br><br>
 
 ```
 

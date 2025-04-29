@@ -36,14 +36,12 @@ $(document).ready(function() {
                   <div class="card h-100">
                     <div class="card-body">
                       <h5 class="card-title"><strong>${log.date}</strong></h5>
-                      <h6 class="card-subtitle mb-2 text-muted">${log.time}</h6>
-                      <p class="card-text">${log.note}</p>
-                      <a href="#" class="btn btn-primary">Edit</a>
-                      <a href="#" class="btn btn-danger">Delete</a>
+                      <p class="card-text">Time: ${log.time}</p>
+                      <p class="card-text">Note: ${log.note}</p>
                     </div>
                   </div>
                 </div>
-              `);
+            `);
         });
     }
 

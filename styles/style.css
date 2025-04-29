@@ -137,9 +137,17 @@ th {
 .show {display: block;}
 
 .header-image {
+  width: 500px;
+  height: 350px;
+  margin: 40px auto; 
+  display: block;
+}
+
+/* .header-image {
   position: relative;
   top: 220px;
   left: 600px;
   width: 500px;
   height: 350px;
 }
+ */

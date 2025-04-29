@@ -6,6 +6,8 @@
 ## Attribution
 - https://www.codingnepalweb.com/make-simple-login-form-html-css/
 - https://github.com/barrycumbie/jubilant-garbanzo-easy-read/blob/main/scripts/readParkingData.js
+- https://github.com/ReedWillis/dev-easy-group-project/tree/main
+- 
 
 ## User Story
 As an IT student currently in a web development course I wanted to make 

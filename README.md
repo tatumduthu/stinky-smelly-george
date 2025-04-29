@@ -22,6 +22,24 @@ long it too me to find a parking spot since it takes AWHILE sometimes...
 course now, we have revisited this project to upgrade it with all the 
 cool new things we have learned.
 
+### Code snippet from original project
+- This is code for the first card that displays my parking app project
+```json
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Parking Blog</h4>
+        <img class="card-img-top img-thumbnail" src="images/parkingAppPreview.png" alt="Card image">
+        <p class="card-text"> My first web dev project where I did this little blog! </p>
+        <a href="pages/parkingApp.html" target="parking" class="card-link">Parking App</a>
+        <a href="pages/parkingAppSource.html" target="parking" class="card-link">source code</a>
+      </div>
+    </div>
+  </div>
+
+```
+
 
 Original URL: [https://codepen.io/tatumduthu/pen/ZYzoqMy](https://codepen.io/tatumduthu/pen/ZYzoqMy).
 

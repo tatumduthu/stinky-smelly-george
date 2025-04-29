@@ -57,24 +57,16 @@ it got stored in a table like this:
 
 ```
 
-### Code Snippet: This project
-This is new code implemented into this project for the nav bar. The nav bar has
-many options such as my Github profile, the source code, wireframe, etc.
-```json
-<div class="topnav">
-  <a href="#home" class="active"><strong>Dev George🦭</strong></a>
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a href="https://github.com/tatumduthu" target="github">GitHub</a>
-    <a href="https://github.com/tatumduthu/stinky-smelly-george" target="source">Source Code</a>
-    <a href="https://validator.nu/?doc=https%3A%2F%2Ftatumduthu.github.io%2Fstinky-smelly-george%2F" target="nu">Nu validator</a>
-    <a href="https://wave.webaim.org/report#/https://tatumduthu.github.io/stinky-smelly-george/" target="nu">Wave</a>
-    <a href="https://raw.githubusercontent.com/tatumduthu/stinky-smelly-george/refs/heads/main/pages/wireframe.jpg" target="wireframe">Wireframe</a>
-    
-    
-  </div>
+### New for this project
+Instead of putting the information into the table, I changed it to 
+put the data into cards. I felt like this was easier to put the edit 
+and delete buttons. (I also already had code to make cards from 
+previous projects in this class)
+![card](images/card.png)
 
-```
+
+## Code I think is cool
+Here is JS code that I think is cool!
 
 
 Original URL: [https://codepen.io/tatumduthu/pen/ZYzoqMy](https://codepen.io/tatumduthu/pen/ZYzoqMy).

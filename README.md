@@ -25,20 +25,33 @@ course now, we have revisited this project to upgrade it with all the
 cool new things we have learned.
 
 ### Code Snippet: original project
-This is code for the dropdown button to select the parking lot that you parked in.
-It has the label, parking ID, and breaks inserted at the end to separate the questions
-for the parking form.
+This is code for the original project that I did. Once you filled out the data
+it got stored in a table
 ```json
-<label for="wheredPark"><strong>Where'd you park?</strong></label><br>
-    <select id="wheredPark" required> 
-      <option value="">Select a parking lot</option>
-      <option value="Appleby">Appleby</option>
-      <option value="Church">Church</option>
-      <option value="Lot O">Lot O</option>
-      <option value="Parking Deck">Parking Deck</option>
-      <option value="Rice/Rivers">Rice/Rivers</option>
-      <option value="Other">Other</option>
-    </select><br><br>
+<table id="parkingTable">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Parking Lot</th> 
+      <th>Time</th>                  
+      <th>Additional Info</th>                  
+    </tr>                    
+  </thead>                   
+  <tbody>
+    <tr>
+      <td>2025-01-14</td>                   
+      <td>Rice/Rivers</td>                  
+      <td>10:42</td>                  
+      <td>Rainy, cold day</td>     
+    </tr>                   
+    <tr>                   
+      <td>2025-01-16</td>                   
+      <td>Church</td>                  
+      <td>10:40</td>                  
+      <td>Clear, sunny, chill day</td>                       
+    </tr>
+  </tbody>
+</table>
 
 ```
 

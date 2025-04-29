@@ -27,6 +27,8 @@ cool new things we have learned.
 ### Code Snippet: original project
 This is code for the original project that I did. Once you filled out the data
 it got stored in a table
+![original table](images/table.jpg)
+
 ```json
 <table id="parkingTable">
   <thead>

@@ -44,16 +44,18 @@ for the parking form.
 This is new code implemented into this project for the nav bar. The nav bar has
 many options such as my Github profile, the source code, wireframe, etc.
 ```json
-<label for="wheredPark"><strong>Where'd you park?</strong></label><br>
-    <select id="wheredPark" required> 
-      <option value="">Select a parking lot</option>
-      <option value="Appleby">Appleby</option>
-      <option value="Church">Church</option>
-      <option value="Lot O">Lot O</option>
-      <option value="Parking Deck">Parking Deck</option>
-      <option value="Rice/Rivers">Rice/Rivers</option>
-      <option value="Other">Other</option>
-    </select><br><br>
+<div class="topnav">
+  <a href="#home" class="active"><strong>Dev George🦭</strong></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="https://github.com/tatumduthu" target="github">GitHub</a>
+    <a href="https://github.com/tatumduthu/stinky-smelly-george" target="source">Source Code</a>
+    <a href="https://validator.nu/?doc=https%3A%2F%2Ftatumduthu.github.io%2Fstinky-smelly-george%2F" target="nu">Nu validator</a>
+    <a href="https://wave.webaim.org/report#/https://tatumduthu.github.io/stinky-smelly-george/" target="nu">Wave</a>
+    <a href="https://raw.githubusercontent.com/tatumduthu/stinky-smelly-george/refs/heads/main/pages/wireframe.jpg" target="wireframe">Wireframe</a>
+    
+    
+  </div>
 
 ```
 

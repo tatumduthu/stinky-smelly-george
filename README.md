@@ -1,4 +1,4 @@
-# parkingApp
+# Dev-George Parking App
 
 A Pen created on CodePen.
 

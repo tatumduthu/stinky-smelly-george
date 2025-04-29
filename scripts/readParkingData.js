@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     function displayParkingData(parkingData) {
         const container = $("#parkingDay");
-        container.empty();
+        container.empty();        
 
         $.each(parkingData, (index, log) => {
             container.append(`
@@ -36,8 +36,8 @@ $(document).ready(function() {
                   <div class="card h-100">
                     <div class="card-body">
                       <h5 class="card-title"><strong>${log.date}</strong></h5>
-                      <p class="card-text">Time: ${log.time}</p>
-                      <p class="card-text">Note: ${log.note}</p>
+                      <p class="card-text-dark">Time: ${log.time}</p>
+                      <p class="card-text-dark">Note: ${log.note}</p>
                     </div>
                   </div>
                 </div>

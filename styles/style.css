@@ -136,7 +136,7 @@ th {
 .show {display: block;}
 
 .header-image {
-  position: absolute;
+  position: relative;
   top: 220px;
   left: 600px;
   width: 500px;

@@ -10,8 +10,7 @@ $(document).ready(function() {
     }
 
 
-// 'https://tatumduthu.github.io/stinky-smelly-george/data/parkingData.json'
-    fetch('data/parkingData.json')
+    fetch('https://tatumduthu.github.io/stinky-smelly-georgedata/parkingData.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');

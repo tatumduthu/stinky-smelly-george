@@ -13,7 +13,7 @@ to track where and when I am parking on campus so that I get an idea of
 where the best places to park are depending on the time of day!
 
 ## Narrative
-The use of this app is to track what time i got to campus, the day, the 
+-The use of this app is to track what time i got to campus, the day, the 
 parking lot,and any other additional information--for example, maybe how 
 long it too me to find a parking spot since it takes AWHILE sometimes...
 

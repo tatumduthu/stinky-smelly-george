@@ -26,8 +26,8 @@ cool new things we have learned.
 
 ### Code Snippet: original project
 This is code for the original project that I did. Once you filled out the data
-it got stored in a table
-![original table](images/table.jpg)
+it got stored in a table like this:
+![original table](images/table.png)
 
 ```json
 <table id="parkingTable">

@@ -8,9 +8,9 @@
 - https://github.com/barrycumbie/jubilant-garbanzo-easy-read/blob/main/scripts/readParkingData.js
 
 ## User Story
-As an IT student currently in a web development I wanted to make an app 
-to track where and when I am parking on campus so that I get an idea of 
-where the best places to park are depending on the time of day!
+As an IT student currently in a web development course I wanted to make 
+an app to track where and when I am parking on campus so that I get an 
+idea of where the best places to park are depending on the time of day!
 
 ## Narrative
 -The use of this app is to track what time i got to campus, the date, the 

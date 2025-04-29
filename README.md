@@ -66,8 +66,31 @@ previous projects in this class)
 
 
 ## Code I think is cool
-Here is JS code that I think is cool!
+Here is JS code that I think is cool! I think I mostly think this code is cool
+because it makes my life a whole lot easier! This code takes the information from 
+the json file parkingData.json and prints them off into the cards for me... so
+I don't have to go add the information to every single card myself.
 
+```json
+function displayParkingData(parkingData) {
+        const container = $("#parkingDay");
+        container.empty();        
 
-Original URL: [https://codepen.io/tatumduthu/pen/ZYzoqMy](https://codepen.io/tatumduthu/pen/ZYzoqMy).
+        $.each(parkingData, (index, log) => {
+            container.append(`
+                <div class="col-md-4 mb-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>${log.date}</strong></h5>
+                      <p class="card-text">Time: ${log.time}</p>
+                      <p class="card-text-dark">Note: ${log.note}</p>
+                    </div>
+                  </div>
+                </div>
+            `);
+        });
+    }
+```
+
+## Real ex. log in
 

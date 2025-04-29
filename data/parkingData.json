@@ -1,0 +1,34 @@
+{ "parkingData" : 
+    [
+        {   
+            "date" : "Th 6 Feb",
+            "time" : "10:38",
+            "note" : "parked at Rice/Rivers parking lot."
+        },
+        {   
+            "date" : "Tu 4 Feb",
+            "time" : "10:38",
+            "note" : "parking deck... it was pouring down rain."
+        },
+        {   
+            "date" : "Th 30 Jan",
+            "time" : "10:38",
+            "note" : "parked at Rice/Rivers parking lot."
+        },
+        {   
+            "date" : "Tu Jan 28",
+            "time" : "10:33",
+            "note" : "Somehow found a spot in the parking deck!"
+        },
+        {
+            "date" : "Th Jan 23", 
+            "time" : "10:47", 
+            "note" : "Had to park in Church of Christ parking lot."
+        },
+        {
+            "date" : "Tu Jan 21", 
+            "time" : "10:40", 
+            "note" : "parked at Rice/Rivers parking lot."
+        }
+    ]
+}

@@ -23,12 +23,40 @@ resources: w3schools, codepen, codeacademy
 <!-- Top Navigation Menu -->
 <div class="topnav">
   <a href="#home" class="active"><strong>Dev George🦭</strong></a>
+
+<!-- search bar -->
+<li class="input" ><input id="searchBar" onkeyup="search_fact()" 
+  type="text" name="search" placeholder="Search.."></li>
+
+  <button id="login" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Login
+  </button>
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Please Enter Username and Password</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" id="username" class="form-control mb-2" placeholder="Username">
+          <input type="password" id="password" class="form-control mb-2" placeholder="Password">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Enter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Navigation links (hidden by default) -->
   <div id="myLinks">
     <a href="https://github.com/tatumduthu" target="github">GitHub</a>
     <a href="https://github.com/tatumduthu/stinky-smelly-george" target="source">Source Code</a>
     <a href="https://validator.nu/?doc=https%3A%2F%2Ftatumduthu.github.io%2Fstinky-smelly-george%2F" target="nu">Nu validator</a>
-    <a href="https://wave.webaim.org/report#/https://tatumduthu.github.io/stinky-smelly-george/" target="nu">Wave</a>
+    <a href="https://wave.webaim.org/report#/https://tatumduthu.github.io/stinky-smelly-george/" target="wave">Wave</a>
     <a href="https://raw.githubusercontent.com/tatumduthu/stinky-smelly-george/refs/heads/main/pages/wireframe.jpg" target="wireframe">Wireframe</a>
     
     
@@ -38,28 +66,7 @@ resources: w3schools, codepen, codeacademy
     <i class="fa fa-bars"></i>
   </a>
 </div>
-<button id="login" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Login
-</button>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Please Enter Username and Password</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <input type="text" id="username" class="form-control mb-2" placeholder="Username">
-        <input type="password" id="password" class="form-control mb-2" placeholder="Password">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Enter</button>
-      </div>
-    </div>
-  </div>
-</div>
 
                                                                        
 <!-- image and title with class mascot -->
@@ -73,25 +80,13 @@ resources: w3schools, codepen, codeacademy
                            
   <form id="parkingForm">
     <label for="dateParked"><strong>What day?</strong>  </label><br>
-    <input id="dateParked" type="date" required><br><br><br>
-  
-<!-- new dropdown bar with parking options. from w3Schools -->                                      
-    <label for="wheredPark"><strong>Where'd you park?</strong></label><br>
-    <select id="wheredPark" required> 
-      <option value="">Select a parking lot</option>
-      <option value="Appleby">Appleby</option>
-      <option value="Church">Church</option>
-      <option value="Lot O">Lot O</option>
-      <option value="Parking Deck">Parking Deck</option>
-      <option value="Rice/Rivers">Rice/Rivers</option>
-      <option value="Other">Other</option>
-    </select><br><br>
-  
+    <input id="dateParked" type="date" required><br><br><br>                                  
+    
     <label for="timeParked"><strong>What time?</strong></label><br>
     <input id="timeParked" type="time" required><br><br>
   
-    <label for="additionalInfo"><strong>Additional info?</strong></label><br>
-    <textarea id="additionalInfo" rows="4" cols="50" placeholder="Enter any additional info"></textarea><br><br>
+    <label for="note"><strong>Note</strong></label><br>
+    <textarea id="note" rows="4" cols="50" placeholder="Enter any additional info"></textarea><br><br>
     
     <button type="button" id="saveParking">Save Parking Data</button>
   </form>
@@ -103,30 +98,9 @@ resources: w3schools, codepen, codeacademy
  -->                                         
  
 <br><br><h2><strong>Parking Log: </strong><h2><br>
-<table id="parkingTable">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Parking Lot</th> 
-      <th>Time</th>                  
-      <th>Additional Info</th>                  
-    </tr>                    
-  </thead>                   
-  <tbody>
-    <tr>
-      <td>2025-01-14</td>                   
-      <td>Rice/Rivers</td>                  
-      <td>10:42</td>                  
-      <td>Rainy, cold day</td>     
-    </tr>                   
-    <tr>                   
-      <td>2025-01-16</td>                   
-      <td>Church</td>                  
-      <td>10:40</td>                  
-      <td>Clear, sunny, chill day</td>                       
-    </tr>
-  </tbody>
-</table>
+<div class="container mt-4">
+  <div class="row" id="parkingDay"></div>
+</div>
 
 <!-- bs5 footer code website= https://mdbootstrap.com/docs/standard/navigation/footer/ -->
 <!-- <div class="container"> -->
@@ -157,6 +131,31 @@ resources: w3schools, codepen, codeacademy
         </ul>
       </div>
       <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Nu</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://validator.nu/?doc=https%3A%2F%2Ftatumduthu.github.io%2Fstinky-smelly-george%2F" target="nu" class="text-body">visit Nu</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Wave</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://wave.webaim.org/report#/https://tatumduthu.github.io/stinky-smelly-george/" target="wave" class="text-body">visit Wave</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
     </div>
     <!--Grid row-->
   </div>
@@ -171,14 +170,15 @@ resources: w3schools, codepen, codeacademy
 </footer>
                                            
  
-</body>
+
 <!-- </body> -->
 <br><h5>link to <a href="https://codepen.io/tatumduthu/pen/ZYzoqMy" target="_blank"</a> original codePen</h5>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script><script  src="scripts/table.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+<script  src="scripts/readParkingData.js"></script>
 
 </body>
 </html>

@@ -63,7 +63,7 @@ h1 {
 }
 
 p {
-  color: black;
+  color: white;
 }
 
 h2 {
@@ -148,7 +148,12 @@ th {
   border: 5px solid black;
   margin: auto;
   background-color: #FFFFFF;
-  }
+}
+
+.card-body p.card-text {
+  color: black;
+}
+
 
 .card {
   background-color: white;

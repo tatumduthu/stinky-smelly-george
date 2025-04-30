@@ -64,6 +64,11 @@ and delete buttons. (I also already had code to make cards from
 previous projects in this class)
 ![card](images/card.png)
 
+## Real ex. log in
+Here is a real example log in that I think is pretty simple. It is from
+the website CodeAcademy
+![original table](images/login.png)
+I think the log in I used was much more simple though!...
 
 ## Code I think is cool
 Here is JS code that I think is cool! I think I mostly think this code is cool
@@ -92,5 +97,10 @@ function displayParkingData(parkingData) {
     }
 ```
 
-## Real ex. log in
+
+## Future App Ideas
+I think it would be cool to expand on this app to where I have multiple logs. For instance, 
+a section of my parking log, a section for a food log, a homework log, etc. It would have 
+to be organized better, but I think it would be cool to keep track of daily things like 
+this on a web app that I created.
 

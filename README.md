@@ -68,6 +68,7 @@ previous projects in this class)
 Here is a real example log in that I think is pretty simple. It is from
 the website CodeAcademy
 ![original table](images/login.png)
+
 I think the log in I used was much more simple though!...
 
 ## Code I think is cool

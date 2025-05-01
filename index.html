@@ -5,6 +5,8 @@
   <title>Tatum's Parking Log</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 <body>
@@ -18,15 +20,15 @@ resources: w3schools, codepen, codeacademy
 
 <!-- from w3s: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
   <a href="#home" class="active"><strong>Dev George🦭</strong></a>
 
 <!-- search bar -->
-<li class="input" ><input id="searchBar" onkeyup="search_fact()" 
-  type="text" name="search" placeholder="Search.."></li>
+<div class="input" >
+  <input id="searchBar" onkeyup="search_card()" type="text" name="search" placeholder="Search..">
+</div>
 
   <button id="login" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Login
@@ -74,7 +76,7 @@ resources: w3schools, codepen, codeacademy
 <h1>Tatum's Parking Log 🦭</h1>
 
  
-<p><em>This is a table log of my <a href="http://alabamacommunication.org/wordpress/wp-content/uploads/2024/07/UNA-Parking-Map.pdf" target="_blank">parking</a> experience during the Spring 2025 semester at <a href="https://una.edu" target="_blank"> UNA</em></a>.</p>
+<p><em>This is a table log of my <a href="http://alabamacommunication.org/wordpress/wp-content/uploads/2024/07/UNA-Parking-Map.pdf" target="map">parking</a> experience during the Spring 2025 semester at <a href="https://una.edu" target="una">UNA</a>.</em></p>
                                                                                                                              
 <!-- <div class="form-container"> idk -->
                            
@@ -92,12 +94,9 @@ resources: w3schools, codepen, codeacademy
   </form>
 </div><br><br>        
  
-                                          
-<!-- input new parking log 
-     new table feature to hold all the parking form information. from w3Schools                                     
- -->                                         
+                                         
  
-<br><br><h2><strong>Parking Log: </strong><h2><br>
+<br><br><h2><strong>Parking Log: </strong></h2><br>
 <div class="container mt-4">
   <div class="row" id="parkingDay"></div>
 </div>
@@ -171,9 +170,6 @@ resources: w3schools, codepen, codeacademy
                                            
  
 
-<!-- </body> -->
-<br><h5>link to <a href="https://codepen.io/tatumduthu/pen/ZYzoqMy" target="_blank"</a> original codePen</h5>
-<!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>

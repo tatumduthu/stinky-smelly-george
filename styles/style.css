@@ -71,9 +71,9 @@ h2 {
   color: gold;
 }
 
-
+/* 
 /* all table styling code from w3Schools */
-table, th, td {
+/* table, th, td {
   border: 3px solid black;
   color: white;
 }
@@ -84,8 +84,8 @@ th, td {
 
 th {
   background-color: white;
-  color: brown;
-}
+  color: brown; */
+} */
 
 .form-container {
   background-color: rgba(0, 0 , 0, 0.5);
@@ -137,7 +137,7 @@ th {
 .show {display: block;}
 
 .header-image {
-  width: 300px;
+  width: 420px;
   height: auto; 
   display: block;
   margin: 10px 0 20px auto;
@@ -152,10 +152,19 @@ th {
 }
 
 .card-body p.card-text {
-  color: black;
+  color: purple;
 }
-
 
 .card {
   background-color: white;
 }
+
+.form-image-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+

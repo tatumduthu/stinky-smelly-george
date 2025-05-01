@@ -38,6 +38,8 @@ $(document).ready(function() {
                       <h5 class="card-title"><strong>${log.date}</strong></h5>
                       <p class="card-text">Time: ${log.time}</p>
                       <p class="card-text-dark">Note: ${log.note}</p>
+                      <a href="#" class="btn btn-primary">Edit</a>
+                      <a href="#" class="btn btn-primary">Delete</a>
                     </div>
                   </div>
                 </div>

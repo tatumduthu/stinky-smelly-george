@@ -49,24 +49,20 @@ $(document).ready(function() {
 
 
 // extra
-//   function search_fact() {
-//     let input = document.getElementById('searchBar').value
-//     input = input.toLowerCase();
-//     let x = document.getElementsByClassName('card-body');
+// Got from https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/
+  function search_card() {
+      let input = document.getElementById('searchBar').value.toLowerCase();
+      let cards = document.querySelectorAll('.card');
 
-//     for (i = 0; i < x.length; i++) {
-//         if (!x[i].innerHTML.toLowerCase().includes(input)) {
-//             x[i].style.display = "none";
-//         }
-//         else {
-//             x[i].style.display = "list-item";
-//         }
-//     }
-
-// Got this ^^^^ from https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/
-
-
-
+      cards.forEach(card => {
+          let text = card.querySelector('.card-body').innerText.toLowerCase();
+          if (text.includes(input)) {
+              card.style.display = "block";
+          } else {
+              card.style.display = "none";
+          }
+      });
+  }
 
 
 // w3s: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp

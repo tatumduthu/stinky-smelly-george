@@ -137,9 +137,10 @@ th {
 .show {display: block;}
 
 .header-image {
-  width: 500px;
+  width: 300px;
   height: auto; 
-  margin: 20px;
+  display: block;
+  margin: 10px 0 20px auto;
 }
 
 #links {
